@@ -65,3 +65,30 @@ body {
   #result p {
     margin: 5px 0;
   }
+
+.nav{
+  background-color: #e7e7e7;
+  padding: 10px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.nav ul li {
+  
+  list-style-type: none;
+}
+.nav ul li a button{
+  padding: 8px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background-color: #0c5877;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav ul li a button:hover{
+  opacity: 0.8;
+}
