@@ -6,7 +6,7 @@ function getData() {
         return;
     }
 
-    const endpoint = `http://localhost:8080/v1/metadata/${idInput}`;
+    const endpoint = `https://imobcoinfractionalized.onrender.com/v1/metadata/${idInput}`;
     const loadingMessage = document.getElementById('loadingMessage');
     loadingMessage.style.display = 'block';
     fetch(endpoint)

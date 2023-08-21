@@ -46,7 +46,7 @@ document.getElementById('mintForm').addEventListener('submit', async function (e
     };
 
     const authorizationToken = document.getElementById('authorization').value;
-    const endpoint = 'http://localhost:8080/v1/mint';
+    const endpoint = 'https://imobcoinfractionalized.onrender.com/v1/mint';
 
     try {
         const response = await fetch(endpoint, {
