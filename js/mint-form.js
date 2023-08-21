@@ -65,7 +65,9 @@ document.getElementById('mintForm').addEventListener('submit', async function (e
             document.getElementById('diyNFTAddress').textContent = `DIY NFT Address: ${data.baseNFTAddress}`;
             document.getElementById('mintedTokenId').textContent = `Minted Token ID: ${data.mintedTokenId}`;
             document.getElementById('brickERC20Address').textContent = `Brick ERC20 Address: ${data.brickERC20Address}`;
+            document.getElementById('deployedImobFracERC20Address').textContent = `Deployed Imob Frac ERC20 Address: ${data.deployedImobFractionERC20Address}`;
             document.getElementById('transactionHash').textContent = `Transaction Hash: ${data.transactionHash}`;
+            //deployedImobFracERC20Address
             document.getElementById('transactionLink').innerHTML = `<a target="_blank" href="https://testnet.ftmscan.com/tx/${data.transactionHash}">Follow your transaction HERE!</a>`;
             document.getElementById('result').style.display = 'block';
             document.getElementById("loadingMsg").style.display = "none"
