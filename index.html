@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImobCoin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+      <li>
+        <a href="./view.html">View minted Imobs</a>
+
+      </li>
+      <li>
+        <a href="./update.html">Update a Imob</a>
+
+      </li>
+      <li>
+        <a href="./add-document.html">Add a document</a>
+
+      </li>
+    </ul>
+  </nav>
+    <h1>Mint your Imob</h1>
+    <form id="mintForm">
+        <label for="authorization">Authorization token API access:</label>
+        <input type="password" id="authorization" name="authorization" placeholder="Enter your authorization token"
+            required><br>
+    
+        <label for="to"> Mint Token To:</label>
+        <input type="text" id="to" name="to" value="0x8d082a5A58a518B72552261Cd1812076dF2102e4"><br>
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="DIY Bela Vista"><br>
+    
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image"
+            value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/NFT-Image-UNIT%20BELA%20VISTA_FACHADA_1%20TIRO.jpg"><br>
+    
+        <label for="vgv">VGV:</label>
+        <input type="number" id="vgv" name="vgv" value="77000000" step="0.1"><br>
+    
+        <label for="metadata_imobFractionName">Name (Imob Fraction):</label>
+        <input type="text" id="metadata_imobFractionName" name="metadata_imobFractionName" value="DIY Fraction"><br>
+        <label for="metadata_imobFractionSymbol">Symbol (Imob Fraction):</label>
+        <input type="text" id="metadata_imobFractionSymbol" name="metadata_imobFractionSymbol" value="DIYF"><br>
+        <label for="metadata_nomeDaEmpresa">Nome da Empresa:</label>
+        <input type="text" id="metadata_nomeDaEmpresa" name="metadata_nomeDaEmpresa" value="DIY Bela Vista"><br>
+
+        <label for="metadata_cnpj">CNPJ:</label>
+        <input type="text" id="metadata_cnpj" name="metadata_cnpj" value="35.904.543/0001-18"><br>
+
+        <label for="metadata_speUnitySPE02">SPE Unity SPE02:</label>
+        <input type="text" id="metadata_speUnitySPE02" name="metadata_speUnitySPE02" value="- DIY Bela Vista"><br>
+
+        <label for="metadata_endereco">Endereço:</label>
+        <input type="text" id="metadata_endereco" name="metadata_endereco" value="Rua João Passalaqua, 167, Bela Vista"><br>
+
+        <label for="metadata_zoneamentoZC">Zoneamento ZC:</label>
+        <input type="text" id="metadata_zoneamentoZC" name="metadata_zoneamentoZC" value="ZC"><br>
+
+        <label for="metadata_torres">Torres:</label>
+        <input type="number" id="metadata_torres" name="metadata_torres" value="1"><br>
+
+        <label for="metadata_pisos">Pisos:</label>
+        <input type="text" id="metadata_pisos" name="metadata_pisos" value="11° e 2° sub Térreos, Térreo e Mez., 1° a 11° (apto.), 12° (apto e área comum), 13° a 18° (apto) 19° (apto e área comum), 20° (apto), 21º (áreas comuns cobertas), 22º Áreas comuns descobertas e Barrilete"><br>
+
+        <label for="metadata_areaDePouso">Área de Pouso:</label>
+        <input type="text" id="metadata_areaDePouso" name="metadata_areaDePouso" value="1.076,32 m²"><br>
+
+        <label for="metadata_areaDoada">Área Doada:</label>
+        <input type="text" id="metadata_areaDoada" name="metadata_areaDoada" value="119,66 m²"><br>
+
+        <label for="metadata_areaRestante">Área Restante:</label>
+        <input type="text" id="metadata_areaRestante" name="metadata_areaRestante" value="0.956,66 m²"><br>
+
+        <label for="metadata_areaPrivadaTotal">Área Privada Total:</label>
+        <input type="text" id="metadata_areaPrivadaTotal" name="metadata_areaPrivadaTotal" value="7.127,15 m²"><br>
+
+        <label for="metadata_areaTotalConstruida">Área Total Construída:</label>
+        <input type="text" id="metadata_areaTotalConstruida" name="metadata_areaTotalConstruida" value="10.485,57 m²"><br>
+
+        <label for="metadata_areaComputavel">Área Computável:</label>
+        <input type="text" id="metadata_areaComputavel" name="metadata_areaComputavel" value="5.542,08 m²"><br>
+
+        <label for="metadata_areaNaoComputavel">Área Não Computável:</label>
+        <input type="text" id="metadata_areaNaoComputavel" name="metadata_areaNaoComputavel" value="4.943,49 m²"><br>
+
+        <label for="metadata_projetoCG">Projeto CG:</label>
+        <input type="number" id="metadata_projetoCG" name="metadata_projetoCG" value="51491"><br>
+
+        <label for="metadata_gcMaximoPermitido">GC Máximo Permitido:</label>
+        <input type="number" id="metadata_gcMaximoPermitido" name="metadata_gcMaximoPermitido" value="6"><br>
+
+        <label for="metadata_projetoAreaPermeavel">Projeto Área Permeável:</label>
+        <input type="text" id="metadata_projetoAreaPermeavel" name="metadata_projetoAreaPermeavel" value="138,19 m²"><br>
+
+        <label for="metadata_areaTotalDaLoja">Área Total da Loja:</label>
+        <input type="text" id="metadata_areaTotalDaLoja" name="metadata_areaTotalDaLoja" value="343,20 m²"><br>
+
+        <label for="metadata_estacionamento">Estacionamento:</label>
+        <input type="text" id="metadata_estacionamento" name="metadata_estacionamento" value="1.530,89 m²"><br>
+
+        <label for="metadata_arquitetura">Arquitetura:</label>
+        <input type="text" id="metadata_arquitetura" name="metadata_arquitetura" value="Gkal">
+
+
+        <label for="metadata_uso">Uso:</label>
+        <input type="text" id="metadata_uso" name="metadata_uso" value="Residencial / Loja"><br>
+
+        <label for="metadata_unidades">Unidades:</label>
+        <input type="number" id="metadata_unidades" name="metadata_unidades" value="223"><br>
+
+        <label for="metadata_vagas">Vagas:</label>
+        <input type="number" id="metadata_vagas" name="metadata_vagas" value="44"><br>
+
+        <label for="metadata_estudiosDeTipologia">Estúdios de Tipologia:</label>
+        <input type="text" id="metadata_estudiosDeTipologia" name="metadata_estudiosDeTipologia" value="192 estúdios"><br>
+
+        <label for="metadata_tipologiaApartamentosTipo">Tipologia Apartamentos Tipo:</label>
+        <input type="text" id="metadata_tipologiaApartamentosTipo" name="metadata_tipologiaApartamentosTipo" value="31 apartamentos"><br>
+
+        <label for="metadata_termoDeCompromissoAmbiental">Termo de Compromisso Ambiental:</label>
+        <input type="text" id="metadata_termoDeCompromissoAmbiental" name="metadata_termoDeCompromissoAmbiental" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/Termo%20de%20compromisso%20ambiental.pdf"><br>
+
+        <label for="metadata_aprovacao">Aprovação:</label>
+        <input type="text" id="metadata_aprovacao" name="metadata_aprovacao" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/Aprovac%CC%A7a%CC%83o_DIY_Bela_Vista.pdf"><br>
+
+        <label for="metadata_ata">Ata:</label>
+        <input type="text" id="metadata_ata" name="metadata_ata" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/Ata%20n%C2%B02062%20-%20Aprovac%CC%A7a%CC%83o%20processo%2089039.pdf"><br>
+
+        <label for="metadata_cnpjSPE02">CNPJ SPE02:</label>
+        <input type="text" id="metadata_cnpjSPE02" name="metadata_cnpjSPE02" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/CNPJ%20SPE%2002.pdf"><br>
+
+        <label for="metadata_declaracaoDeInexibilidade">Declaração de Inexigibilidade:</label>
+        <input type="text" id="metadata_declaracaoDeInexibilidade" name="metadata_declaracaoDeInexibilidade" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/DIY-inexigibilidade_196416_128200289.pdf"><br>
+
+        <label for="metadata_despachoDeferido">Despacho Deferido:</label>
+        <input type="text" id="metadata_despachoDeferido" name="metadata_despachoDeferido" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/SEI_PMSP%20-%20056102800%20-%20Despacho%20deferido.pdf"><br>
+
+        <label for="metadata_termoDeEncerramento">Termo de Encerramento:</label>
+        <input type="text" id="metadata_termoDeEncerramento" name="metadata_termoDeEncerramento" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/SEI_PMSP%20-%20056898006%20-%20Termo%20de%20Encerramento.pdf"><br>
+
+        <label for="metadata_alvaraDeAprovacao">Alvará de Aprovação:</label>
+        <input type="text" id="metadata_alvaraDeAprovacao" name="metadata_alvaraDeAprovacao" value="https://gateway.pinata.cloud/ipfs/Qma9tYEP6bYh7YHTwFjG7cTuWPGzPz9zfnjAvViquzKzRL/SaopauloSP.alvara_aprovacao_edificacao_nova_v4.html_1671458997592.pdf"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p id="loadingMsg" style="display: none;text-align: center;">Loading Request...</p>
+    <div id="result" style="display: none;">
+        <h2>Minted NFT Details:</h2>
+        <p id="successMessage"></p>
+        <p id="diyNFTAddress"></p>
+        <p id="mintedTokenId"></p>
+        <p id="brickERC20Address"></p>
+        <p id="transactionHash"></p>
+        <p id="transactionLink"></p>
+    </div>
+    
+    <script src="./js/mint-form.js"></script>
+</body>
+</html>
